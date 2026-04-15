@@ -13,49 +13,68 @@ import { RecommendationStack } from "@/components/recommendation-stack";
 
 // Data
 const skills = [
-  // Frontend
+  // Languages
   { name: "JavaScript", logo: "https://cdn.simpleicons.org/javascript", type: "tech" },
   { name: "TypeScript", logo: "https://cdn.simpleicons.org/typescript", type: "tech" },
+  { name: "Go (Golang)", logo: "https://cdn.simpleicons.org/go", type: "tech" },
+
+  // Frontend
   { name: "React", logo: "https://cdn.simpleicons.org/react", type: "tech" },
   { name: "Next.js", logo: "https://cdn.simpleicons.org/nextdotjs", type: "tech" },
   { name: "Redux", logo: "https://cdn.simpleicons.org/redux", type: "tech" },
   { name: "Angular", logo: "https://cdn.simpleicons.org/angular", type: "tech" },
   { name: "Ionic", logo: "https://cdn.simpleicons.org/ionic", type: "tech" },
-  // Backend
+
+  // Backend / APIs
   { name: "Node.js", logo: "https://cdn.simpleicons.org/nodedotjs", type: "tech" },
   { name: "Express", logo: "https://cdn.simpleicons.org/express", type: "tech" },
   { name: "REST APIs", logo: "Globe", type: "icon" },
+  { name: "GraphQL", logo: "https://cdn.simpleicons.org/graphql", type: "tech" },
   { name: "Microservices", logo: "Server", type: "icon" },
-  // Database
+
+  // Database / Search
   { name: "PostgreSQL", logo: "https://cdn.simpleicons.org/postgresql", type: "tech" },
   { name: "MongoDB", logo: "https://cdn.simpleicons.org/mongodb", type: "tech" },
   { name: "CouchDB", logo: "https://cdn.simpleicons.org/apachecouchdb", type: "tech" },
   { name: "Elasticsearch", logo: "https://cdn.simpleicons.org/elasticsearch", type: "tech" },
-  // DevOps / Cloud
+
+  // DevOps / Cloud / Observability
   { name: "Docker", logo: "https://cdn.simpleicons.org/docker", type: "tech" },
   { name: "Kubernetes", logo: "https://cdn.simpleicons.org/kubernetes", type: "tech" },
+  { name: "Nginx", logo: "https://cdn.simpleicons.org/nginx", type: "tech" },
   { name: "Terraform", logo: "https://cdn.simpleicons.org/terraform", type: "tech" },
-  { name: "AWS (EC2, S3, Lambda)", logo: "https://upload.wikimedia.org/wikipedia/commons/5/5c/AWS_Simple_Icons_AWS_Cloud.svg", type: "tech" },
+  { name: "AWS (EC2, S3, Lambda, EKS)", logo: "https://upload.wikimedia.org/wikipedia/commons/5/5c/AWS_Simple_Icons_AWS_Cloud.svg", type: "tech" },
   { name: "GitHub Actions", logo: "https://cdn.simpleicons.org/githubactions", type: "tech" },
   { name: "Jenkins", logo: "https://cdn.simpleicons.org/jenkins", type: "tech" },
   { name: "Travis CI", logo: "https://cdn.simpleicons.org/travisci", type: "tech" },
+  { name: "Sentry", logo: "https://cdn.simpleicons.org/sentry", type: "tech" },
+  { name: "Datadog", logo: "https://cdn.simpleicons.org/datadog", type: "tech" },
+
   // General
   { name: "System Design", logo: "Layout", type: "icon" },
-  { name: "API Design", logo: "Code", type: "icon" },
-  { name: "Agile", logo: "Users", type: "icon" },
+  { name: "Claude", logo: "Code", type: "icon" },
+  { name: "Cursor", logo: "Users", type: "icon" },
 ];
 
 const experience = [
   {
-    company: "AirFi Aviation",
-    role: "Associate Lead Engineer",
-    date: "2022 - Present",
+    company: "Deel",
+    role: "Full Stack Engineer",
+    date: "Feb 2026 - Present",
     description: [
-      "Architected a high-scale voucher system generating 1M+ voucher codes per month for use across 400+ flights.",
-      "Managed agile ceremonies including sprint planning, stand-ups, reviews, and retrospectives.",
-      "Migrated legacy AngularJS modules to React & Next.js, implementing SSG to reduce initial load time from 7 to 2.3 seconds.",
-      "Optimized CI/CD pipelines using GitHub Actions and Travis CI, reducing build time to 8 minutes 30 seconds.",
-      "Built and deployed RESTful APIs in TypeScript for third-party mobile apps, integrated DRM-based video streaming for secure entertainment delivery."
+      "Working within a domain-driven Go backend, building features that manage device assignments, contracts, and procurement workflows across global enterprise customers.",
+      "Engineered warehouse operations tooling that reduced manual workflows for logistics teams, building end-to-end from PostgreSQL migrations, Fiber APIs, and React admin panels."
+    ],
+    logo: "/logos/deel.png",
+    initials: "DL"
+  },
+  {
+    company: "AirFi Aviation",
+    role: "Associate Lead Engineer - Full Stack",
+    date: "Mar 2022 - Jan 2026",
+    description: [
+      "Architected a high-scale voucher system generating 10M+ voucher codes per month for use across 1000+ flights.",
+      "Migrated legacy AngularJS modules to React & Next.js, implementing SSG to reduce initial load time from 7 to 2.3 seconds."
     ],
     logo: "/logos/airfi.jpg",
     initials: "AF"
@@ -63,11 +82,10 @@ const experience = [
   {
     company: "Zigram",
     role: "Senior Software Engineer",
-    date: "2021 - 2022",
+    date: "Apr 2021 - Feb 2022",
     description: [
       "Engineered backend consolidation workflows to process 5M+ user profiles, improving data indexing and query speeds.",
-      "Improved a full-stack expert research platform using Angular 7, Node.js, PostgreSQL, and ElasticSearch.",
-      "Designed reusable, scalable UI components and complex user workflows."
+      "Improved a full-stack expert research platform using Angular 7, Node.js, PostgreSQL, and Elasticsearch."
     ],
     logo: "/logos/zigram.png",
     initials: "ZG"
@@ -75,26 +93,35 @@ const experience = [
   {
     company: "TCS - R&I",
     role: "Systems Engineer",
-    date: "2019 - 2021",
+    date: "Jun 2019 - Mar 2021",
     description: [
-      "Built dynamic Angular dashboards for a leading U.S. glass manufacturer, optimized website initial load time from 8.5 to 2 seconds.",
-      "Implemented Jenkins CI/CD pipelines, reducing build and deployment time from 42 to 7 minutes using optimized Docker builds and automated scripting."
+      "Built dynamic Angular dashboards for a leading U.S. glass manufacturer, optimizing website initial load time from 8.5 to 2 seconds.",
+      "Implemented Jenkins CI/CD pipelines, reducing build and deployment time from 42 to 7 minutes using Docker builds and automated scripting."
     ],
     logo: "/logos/tcs.png",
     initials: "TC"
   },
   {
     company: "Udacity",
-    role: "Mentor & Reviewer",
-    date: "2018 - 2021",
+    role: "Mentor & Code Reviewer (Contract)",
+    date: "Jul 2017 - Mar 2019",
     description: [
-      "Mentored 100+ students from Fullstack Javascript and Cloud Nanodegree throughout their journey.",
-      "Helped them with their projects, provided guidance on problem-solving solutions, and mentored them through their nanodegree program.",
-      "Provided 1:1 live chat support to students from Front-End Web Developer Nanodegree Program.",
-      "Assisted students with doubts, projects, and conceptual approaches to problem-solving."
+      "Mentored over 100 students on JavaScript, Full Stack, and Cloud Nanodegree programs.",
+      "Delivered live 1:1 sessions, code reviews, debugging support, and conceptual guidance."
     ],
     logo: "/logos/udacity.png",
     initials: "UD"
+  },
+  {
+    company: "Youstart Technologies",
+    role: "Full Stack Developer Intern",
+    date: "May 2018 - Jul 2018",
+    description: [
+      "Designed a hotel booking application using Angular, Ionic, and Firebase containing 10+ UI screens.",
+      "Implemented a map-based search feature across 20+ states."
+    ],
+    logo: "/logos/youstart.jpg",
+    initials: "YS"
   }
 ];
 
@@ -183,8 +210,8 @@ const projects = [
     description: "Modern CI/CD pipeline implementation demonstrating automated testing, build processes, and containerized deployment strategies.",
     category: "DEVOPS",
     tech: ["GitHub Actions", "Docker", "Node.js"],
-    link: "https://github.com/shubham16598/CICD-Autodeploy",
-    repo: "https://github.com/shubham16598/CICD-Autodeploy",
+    link: "https://github.com/shubhamkalyanwat/CICD-Autodeploy",
+    repo: "https://github.com/shubhamkalyanwat/CICD-Autodeploy",
     image: "/projects/autodeploy.png",
     bgColor: "#F0FDF4" // Light green
   },
@@ -203,8 +230,8 @@ const projects = [
     description: "Interactive movie discovery platform consuming the TMDB API. Features infinite scrolling, searching, and dynamic detail views.",
     category: "ENTERTAINMENT",
     tech: ["React", "TMDB API", "CSS Modules"],
-    link: "https://github.com/shubham16598/MovieWall",
-    repo: "https://github.com/shubham16598/MovieWall",
+    link: "https://github.com/shubhamkalyanwat/MovieWall",
+    repo: "https://github.com/shubhamkalyanwat/MovieWall",
     image: "/projects/moviewall.jpeg",
     bgColor: "#FAF5FF" // Light purple
   }
@@ -253,7 +280,7 @@ export default function Home() {
             <Link href="#recommendations" className="hover:text-foreground transition-colors">recommendations</Link>
           </li>
           <li>
-            <Link href="mailto:shubham16598@gmail.com" className="hover:text-foreground transition-colors">contact</Link>
+            <Link href="mailto:shubhamkalyanwat@gmail.com" className="hover:text-foreground transition-colors">contact</Link>
           </li>
         </ul>
 
@@ -316,7 +343,7 @@ export default function Home() {
             <div className="space-y-4 max-w-2xl mx-auto lg:mx-0">
               <p className="text-lg text-muted-foreground leading-relaxed">
                 I am a full-stack software engineer with <span className="font-semibold text-foreground">6+ years of experience</span> architecting high-scale full-stack systems and optimizing developer workflows. I specialize in the <span className="font-semibold text-foreground">JavaScript ecosystem (React, Next.js, Node.js)</span> and <span className="font-semibold text-foreground">Cloud DevOps (AWS, Docker, Kubernetes)</span>.
-                Currently architecting offline-first media platforms at <Link href="https://www.linkedin.com/company/airfi/posts/?feedView=all" target="_blank" className="font-semibold text-foreground underline hover:text-primary transition-colors">AirFi</Link>.
+                Currently building full-stack systems at <Link href="https://www.deel.com/" target="_blank" className="font-semibold text-foreground underline hover:text-primary transition-colors">Deel</Link>.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 I love open source, trekking 🏔️, and stargazing 🌟.
@@ -333,13 +360,13 @@ export default function Home() {
 
               {/* Social Icons */}
               <div className="flex items-center gap-4 px-2">
-                <Link href="https://www.linkedin.com/in/shubham16598/" target="_blank" className="text-muted-foreground hover:text-foreground transition-all hover:scale-110 p-2">
+                <Link href="https://www.linkedin.com/in/shubhamkalyanwat/" target="_blank" className="text-muted-foreground hover:text-foreground transition-all hover:scale-110 p-2">
                   <Linkedin size={24} />
                 </Link>
-                <Link href="https://github.com/shubham16598" target="_blank" className="text-muted-foreground hover:text-foreground transition-all hover:scale-110 p-2">
+                <Link href="https://github.com/shubhamkalyanwat" target="_blank" className="text-muted-foreground hover:text-foreground transition-all hover:scale-110 p-2">
                   <Github size={24} />
                 </Link>
-                <Link href="mailto:shubham16598@gmail.com" className="text-muted-foreground hover:text-foreground transition-all hover:scale-110 p-2">
+                <Link href="mailto:shubhamkalyanwat@gmail.com" className="text-muted-foreground hover:text-foreground transition-all hover:scale-110 p-2">
                   <Mail size={24} />
                 </Link>
               </div>
@@ -460,7 +487,7 @@ export default function Home() {
               <span className="border-b-4 border-green-200 dark:border-green-800 pb-1">Recommendations</span>
             </h2>
             <Link
-              href="https://www.linkedin.com/in/shubham16598/details/recommendations/?detailScreenTabIndex=0"
+              href="https://www.linkedin.com/in/shubhamkalyanwat/details/recommendations/?detailScreenTabIndex=0"
               target="_blank"
               className="group flex items-center gap-2 text-primary font-semibold hover:text-primary/80 transition-colors whitespace-nowrap"
             >
@@ -517,7 +544,7 @@ export default function Home() {
             </div>
 
             <Link
-              href="https://github.com/shubham16598"
+              href="https://github.com/shubhamkalyanwat"
               target="_blank"
               className="group flex items-center gap-2 text-primary font-semibold hover:text-primary/80 transition-colors whitespace-nowrap mb-1 shrink-0"
             >
@@ -609,9 +636,9 @@ export default function Home() {
         <footer className="mt-16 pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-center text-sm text-muted-foreground gap-4">
           <p>© {new Date().getFullYear()} Shubham Singh Kalyanwat.</p>
           <div className="flex gap-6">
-            <Link href="https://github.com/shubham16598" className="hover:text-foreground transition-colors">GitHub</Link>
-            <Link href="https://www.linkedin.com/in/shubham16598/" className="hover:text-foreground transition-colors">LinkedIn</Link>
-            <Link href="mailto:shubham16598@gmail.com" className="hover:text-foreground transition-colors">Email</Link>
+            <Link href="https://github.com/shubhamkalyanwat" className="hover:text-foreground transition-colors">GitHub</Link>
+            <Link href="https://www.linkedin.com/in/shubhamkalyanwat/" className="hover:text-foreground transition-colors">LinkedIn</Link>
+            <Link href="mailto:shubhamkalyanwat@gmail.com" className="hover:text-foreground transition-colors">Email</Link>
           </div>
         </footer>
       </main>

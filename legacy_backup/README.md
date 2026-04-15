@@ -1,11 +1,11 @@
 <h1 align="center">Hi 🙋‍♂️, I'm Shubham</h1>
 
 <div id="badges" align="center">
-  <a href="https://www.linkedin.com/in/shubham16598" target="_blank">
-    <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="@shubham16598 on LinkedIn" /> 
+  <a href="https://www.linkedin.com/in/shubhamkalyanwat" target="_blank">
+    <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="@shubhamkalyanwat on LinkedIn" /> 
   </a>
-  <a href="https://twitter.com/shubham16598" target="_blank">
-    <img src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" alt="@shubham16598 on Twitter" />
+  <a href="https://twitter.com/shubhamkalyanwat" target="_blank">
+    <img src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" alt="@shubhamkalyanwat on Twitter" />
   </a>
 </div>
 
@@ -13,9 +13,9 @@
 
 - 🧳 I'm a Full Stack Developer, Loves building software applications 
 - 🌱 Exploring Open Source Contribution and Web3.
-- 🕑 Mentor Students and provide Career Guidance in my free time.[![Book a Call](https://img.shields.io/badge/Book-Call-blueviolet)](https://calendly.com/shubham16598/30min)
+- 🕑 Mentor Students and provide Career Guidance in my free time.[![Book a Call](https://img.shields.io/badge/Book-Call-blueviolet)](https://calendly.com/shubhamkalyanwat/30min)
 - 🏕 I love Trekking, Listening to Music and Stargazing (aren't they amazing? 🌟)
-- 📫 How to reach me: &nbsp; [![Linkedin Badge](https://img.shields.io/badge/-shubham-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/shubham16598)
+- 📫 How to reach me: &nbsp; [![Linkedin Badge](https://img.shields.io/badge/-shubham-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/shubhamkalyanwat)
 
 ### **Tech Stack & Tools**
 
@@ -62,10 +62,10 @@
     
 ### **Stats**
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=shubham16598&theme=tokyonight&hide_border=true"/>
+  <img src="https://streak-stats.demolab.com?user=shubhamkalyanwat&theme=tokyonight&hide_border=true"/>
 </p>
 
 <p align="center">
-  <img src="https://gh-readme-profile.vercel.app/api?username=shubham16598"/>
+  <img src="https://gh-readme-profile.vercel.app/api?username=shubhamkalyanwat"/>
 </p>
 
