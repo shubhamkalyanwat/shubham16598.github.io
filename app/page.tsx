@@ -342,7 +342,7 @@ export default function Home() {
 
             <div className="space-y-4 max-w-2xl mx-auto lg:mx-0">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I am a full-stack software engineer with <span className="font-semibold text-foreground">6+ years of experience</span> architecting high-scale full-stack systems and optimizing developer workflows. I specialize in the <span className="font-semibold text-foreground">JavaScript ecosystem (React, Next.js, Node.js)</span> and <span className="font-semibold text-foreground">Cloud DevOps (AWS, Docker, Kubernetes)</span>.
+                I am a full-stack software engineer with <span className="font-semibold text-foreground">7+ years of experience</span> architecting high-scale full-stack systems and optimizing developer workflows. I specialize in the <span className="font-semibold text-foreground">JavaScript ecosystem (React, Next.js, Node.js)</span> and <span className="font-semibold text-foreground">Cloud DevOps (AWS, Docker, Kubernetes)</span>.
                 Currently building full-stack systems at <Link href="https://www.deel.com/" target="_blank" className="font-semibold text-foreground underline hover:text-primary transition-colors">Deel</Link>.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
