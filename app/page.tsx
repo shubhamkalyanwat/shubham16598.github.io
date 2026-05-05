@@ -196,6 +196,26 @@ const recommendations = [
 
 const projects = [
   {
+    title: "AI Support Pipeline using Amazon Bedrock Flows",
+    description: "Built a multi-path AI customer support chatbot on Amazon Bedrock Flows that classifies customer messages and routes them to bug reporting, FAQ automation, or general request handling.",
+    category: "GENAI",
+    tech: ["Amazon Bedrock Flows", "Bedrock Agents", "AWS Lambda", "DynamoDB", "Python"],
+    link: "https://github.com/shubhamkalyanwat/customer-support-agent-bedrock-flows",
+    repo: "https://github.com/shubhamkalyanwat/customer-support-agent-bedrock-flows",
+    image: "/projects/ai-support-pipeline.png",
+    bgColor: "#EEF2FF" // Light indigo
+  },
+  {
+    title: "Agentic Customer Support System using Amazon Bedrock AgentCore",
+    description: "Built and deployed a production-grade agentic customer support system on Amazon Bedrock AgentCore with Lambda-based tools, RAG over knowledge bases, memory across sessions, and browser automation.",
+    category: "GENAI",
+    tech: ["Amazon Bedrock AgentCore", "Strands Agents SDK", "AWS Lambda", "API Gateway", "Python"],
+    link: "https://github.com/shubhamkalyanwat/ai-support-pipeline",
+    repo: "https://github.com/shubhamkalyanwat/ai-support-pipeline",
+    image: "/projects/agentic-customer-support.png",
+    bgColor: "#ECFEFF" // Light cyan
+  },
+  {
     title: "Stay-Inn",
     description: "Hotel Booking App built with Ionic 3 & Angular. Features complex search filtering, real-time availability checking, and secure payment processing.",
     category: "TRAVEL",
